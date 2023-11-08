@@ -37,6 +37,10 @@ def play_game():
             life_remaining = life - guess_count
             print(f"You have {life_remaining} attempts remaining to guess the number.")
             guess_number = guess()
+            if guess_number > 100 or guess_number < 1:
+                print("Out of range.")
+                life_remaining += 1
+                continue
             if guess_number == number:
                 print("You win!")
                 return
