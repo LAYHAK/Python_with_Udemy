@@ -7,7 +7,6 @@ def level():
     else:
         return 5
 
-
 def guess():
     return int(input("Make a guess: "))
 

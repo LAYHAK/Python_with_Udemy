@@ -39,6 +39,7 @@ def compare(user_score, computer_score):
 
 
 def play_game():
+    global computer_score, user_score
     print(logo)
     user_cards = []
     computer_cards = []
